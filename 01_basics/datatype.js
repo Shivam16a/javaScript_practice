@@ -5,7 +5,7 @@ let age = 21
 let isLoggedIn = false
 
 
-console.log(typeof age)
+console.table([typeof name, typeof age, typeof isLoggedIn]);
 /*
 number => 2 to power 53
 bignit
@@ -17,3 +17,7 @@ symbol => unique
 
 object
 */
+
+let score = 33
+
+let convert = Number(score);
