@@ -9,4 +9,14 @@ let str2 = "kumar"
 
 let str3 = str1 + str2
 
-console.log(str3)
+// console.log(str3)
+
+// ==============memory===========
+
+// stack(primitive) , heap(non-primitive)
+
+let name  = "shivam"
+let anothername = name;
+anothername = "Kumar";
+
+console.log(anothername);
