@@ -19,4 +19,28 @@ let name  = "shivam"
 let anothername = name;
 anothername = "Kumar";
 
-console.log(anothername);
+// console.log(anothername);
+
+// =========array=========
+
+// const myarray = [1,2,3,4,5]
+
+// myarray.push(6)
+
+// console.log(myarray);
+
+// const newpush = myarray;
+// newpush.pop()
+
+// newpush.slice(9);
+
+// newpush.findIndex();
+
+// console.log(newpush);
+
+
+const myarray = [1,2,3,4];
+console.log(myarray);
+
+const june = myarray.slice(2);
+console.log(june);
