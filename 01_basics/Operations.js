@@ -15,7 +15,7 @@ let str3 = str1 + str2
 
 // stack(primitive) , heap(non-primitive)
 
-let name  = "shivam"
+let name = "shivam"
 let anothername = name;
 anothername = "Kumar";
 
@@ -39,40 +39,56 @@ anothername = "Kumar";
 // console.log(newpush);
 
 
-const myarray = [1,2,3,4];
+const myarray = [1, 2, 3, 4];
 // console.log(myarray);
 
 const june = myarray.slice(2);
 // console.log(june);
 
-const july = myarray.splice(1,3)
+const july = myarray.splice(1, 3)
 // console.log(july);
 
 
 // ============= Object ===============
 
-const user  = {}
+const user = {}
 user.id = "231"
 user.name = "shivam"
 user.isLoggedIn = false
 
 // console.log(user)
 
-const obj1 = {1:"a",2:"b"}
-const boj2 = {3:"c",4:"d"}
+const obj1 = { 1: "a", 2: "b" }
+const boj2 = { 3: "c", 4: "d" }
 
 // const obj3 = {obj1,boj2}
 // const obj3 = Object.assign({},obj1,boj2);
 
-const obj3 = {...obj1, ...boj2}
+const obj3 = { ...obj1, ...boj2 }
 
 // console.log(obj3)
 
-console.log(user)
+// console.log(user)
 
-console.log(Object.keys(user));
-console.log(Object.values(user));
-console.log(Object.entries(user));
+// console.log(Object.keys(user));
+// console.log(Object.values(user));
+// console.log(Object.entries(user));
 
-console.log(user.hasOwnProperty("islogn"));
+// console.log(user.hasOwnProperty("user"));
 
+
+
+// ============== object de-structuring =================
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructure: "shivam"
+}
+
+// course.courseInstructure
+
+const {courseInstructure:inst} = course
+
+// console.log(courseInstructure)
+console.log(inst);
