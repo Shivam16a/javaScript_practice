@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back_Ground_Color changer</title>
+    <style>
+        .container {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .col {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+
+        .colors {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #gray {
+            background-color: gray;
+        }
+
+        #white {
+            background-color: white;
+        }
+
+        #blue {
+            background-color: blue;
+        }
+
+        #red {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body class="bgbd">
+    <div class="container">
+        <div class="info">
+            <h1>Select any color and change background color</h1>
+        </div>
+    </div>
+    <div class="colors">
+        <div class="col" id="gray"></div>
+        <div class="col" id="white"></div>
+        <div class="col" id="blue"></div>
+        <div class="col" id="red"></div>
+    </div>
+
+    <script src="./color.js"></script>
+</body>
+
+</html>
