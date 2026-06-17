@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculater</title>
+    <style>
+        .container{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .frm{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border: 1px solid black;
+            padding: 20px;
+            box-shadow: 0px 0px 5px #000,0px 0px 10px #012;
+        }
+        input{
+            height: 30px;
+            font-size: 20px;
+        }
+        .parainfo{
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            p{
+                padding: 0;
+                margin: 0;
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+<body style="background-color: #cccc;">
+    <div class="container">
+        <div class="info">
+            <h1>BMI (Body Mass Index) Calculater</h1>
+        </div>
+        <div class="form">
+            <form class="frm">
+                <input type="number" placeholder="Enter your Height" id="height">
+                <input type="number" placeholder="Enter your Weight" id="Weight">
+                <input type="submit" value="Calculate BMI" id="submit">
+            </form>
+        </div>
+        <div class="parainfo">
+            <p class="result"></p>
+            <p>If you BMI is lessthen 18.5 : Underweight </p>
+            <p>If your BMI is between 18.5 to 24.9 : Normal</p>
+            <p>If your BMI is gretterthen 25 : Overweight</p>
+        </div>
+    </div>
+    <script src="./BMIcalculate.js"></script>
+</body>
+</html>
