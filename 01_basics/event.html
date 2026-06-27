@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event</title>
+    <style>
+        .container,
+        img {
+            width: 200px;
+        }
+    </style>
 </head>
+
 <body style="background-color: black;">
     <div class="container">
-
+        <img src="https://img.magnific.com/premium-photo/beautiful-colourful-butterfly_1031776-120189.jpg?w=1480"
+            alt="Random Image">
+        <img src="https://img.magnific.com/free-photo/vertical-closeup-shot-beautiful-pink-wild-rose-blurred_181624-32482.jpg?t=st=1782537938~exp=1782541538~hmac=f6054a0f4b9a887cf55c7f28975379c668c5990da991daa65b97fa5ca030bd4d&w=1480"
+            alt="">
+        <img src="https://img.magnific.com/free-photo/beautiful-butterfly-nature_23-2150765851.jpg?t=st=1782538033~exp=1782541633~hmac=006f929b8de3c1406a3b0d9e12cf13e3e30c1653586829726049c7ae13e09402&w=1480"
+            alt="">
+        <img src="https://img.magnific.com/free-photo/beautiful-spring-landscape-with-blooming-flowers_23-2151913950.jpg?t=st=1782538086~exp=1782541686~hmac=b32c8aa35e4ee827e528e10c09b1f799e829a10519eb65ec44dcf8b2469c10e2&w=1480"
+            alt="">
     </div>
 </body>
+<script>
+    const container =document.querySelectorAll('img');
+    // console.log(container);
+    container.forEach((img)=>{
+        img.addEventListener('click',(e)=>{
+            // console.log(e.target)
+            e.target.remove()
+            
+        })
+    })
+</script>
+
 </html>
