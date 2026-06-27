@@ -23,16 +23,24 @@
             alt="">
         <img src="https://img.magnific.com/free-photo/beautiful-spring-landscape-with-blooming-flowers_23-2151913950.jpg?t=st=1782538086~exp=1782541686~hmac=b32c8aa35e4ee827e528e10c09b1f799e829a10519eb65ec44dcf8b2469c10e2&w=1480"
             alt="">
+        <a href="https://google.com" style="color: white;font-size: 20px;">Google</a>
     </div>
 </body>
 <script>
-    const container =document.querySelectorAll('img');
+    const container = document.querySelectorAll('img');
+    const anchor = document.querySelector("a");
+
+    anchor.addEventListener("click", (e) => {
+        e.preventDefault();
+        console.log("Link click hua, lekin redirect nahi hoga.");
+    });
+    // console.log(anchor)
     // console.log(container);
-    container.forEach((img)=>{
-        img.addEventListener('click',(e)=>{
-            // console.log(e.target)
+    container.forEach((img) => {
+        img.addEventListener('click', (e) => {
+            // console.log(e.target.tagName)
             e.target.remove()
-            
+
         })
     })
 </script>
