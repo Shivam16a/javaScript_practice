@@ -4,8 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .card{
+            height: auto;
+            width: 200px;
+            border: 2px solid wheat;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
 </head>
-<body>
-    
+<body style="background-color: #212121; color: #fff">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, eum, laborum distinctio praesentium magni laboriosam deserunt impedit quae officiis velit suscipit laudantium doloremque nulla beatae soluta quis culpa repudiandae eaque.
+
+    <div class="card">
+
+    </div>
+
+    <script>
+        const card = document.querySelector('.card');
+
+        let img = document.createElement('img');
+        let para = document.createElement('p');
+
+        const requesturl = 'https://api.github.com/users/Shivam16a'
+        const xhr = new XMLHttpRequest()
+        xhr.open('GET',requesturl)
+
+        xhr.onreadystatechange = function (){
+            console.log(xhr.readyState);
+            if(xhr.readyState === 4){
+                const data = JSON.parse(this.responseText)
+                // console.log(data)
+                // console.log(data.followers);
+                img.src = data.avatar_url;
+                img.width = 200;
+                para.innerHTML = ` Name : ${data.name}<br> Followers: ${data.followers}`;
+            }
+        }
+        card.appendChild(img);
+        card.appendChild(para);
+        xhr.send()
+    </script>
 </body>
 </html>
